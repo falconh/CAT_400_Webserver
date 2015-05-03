@@ -1,0 +1,32 @@
+
+<div layout="column" style="width: 70%" ng-controller = "LineChartControllerG" layout-align="start center" layout-padding>
+	<div style="width: 100%" flex="66">
+	<md-card style="width: 100%">
+	<canvas id="line" class="chart chart-line" data="dataG"
+		labels="labelsG" options="optionsG" series="locationG" legend="true" click="onClick">
+	</canvas> 
+	</md-card>
+	</div>
+	
+	<div style="width: 100%" flex="33">
+	<md-card layout="column" style="width: 100%">
+	
+			<form name="formInput">
+			<div layout="column">
+			<md-text-float label="Location" ng-model="location" required> </md-text-float>
+			<md-text-float label="Date&Time" ng-model="dateTime" required> </md-test-float>
+			</div>
+            </form> 
+			
+			<div layout="row" layout-margin layout-padding>
+            <md-button flex class="md-raised md-primary" ng-click="discarder()">Discard</md-button>
+            <md-button flex class="md-raised md-primary" ng-click="viewer()">View</md-button>
+            <md-button flex class="md-raised md-primary" ng-click="starter()">Start</md-button>
+			</div>
+	</md-card>
+	</div>
+            
+</div>
+
+
+			
