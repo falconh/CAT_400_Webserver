@@ -65,6 +65,11 @@
 								<label>Bus Info</label>
 								<input required ng-model="busPrimaryKey">
 							</md-input-container>
+
+							<md-input-container>
+								<label>Journey ID</label>
+								<input required ng-model="journeyID">
+							</md-input-container>
 							
 							
 							<md-button class="md-raised" ng-model="submitButton" ng-click="submitValue()">Submit</md-button>
@@ -103,7 +108,7 @@
 													<span>Speed</span>
 												</td>
 
-												<td ng-model="speedValue">{{busInfoObj.Speed}}</td>
+												<td ng-model="speedValue">{{busInfoObj.Speed + " km/h"}}</td>
 											</tr>
 
 											<tr>
