@@ -133,6 +133,7 @@
 				<div flex>
 					<map style="height: 800px" ng-model="googleMap" center="3.139837, 101.663663" zoom="8">
 						<marker ng-model="busMarker" position="[{{busInfoObj.Latitude}},{{busInfoObj.Longitude}}]" on-click="toggleBounce()" animation="BOUNCE"></marker>
+						<marker ng-model="destinationMarker" position="[{{busInfoObj.DestinationLatLng}}]" icon="images/destinationIcon.png"></marker>
 					</map>
 
 				</div>	
