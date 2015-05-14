@@ -12,6 +12,12 @@
 			<script src="bower_components/angular-moment/angular-moment.js"></script>			
     		<script src="js/socket.js"></script>
     		<!--script src="js/Chart.js"></script-->
+
+    		<!-- angular-timer -->
+    		<script src="bower_components/angular-timer/dist/angular-timer.min.js"></script>
+    		<script src="bower_components/momentjs/min/moment.min.js"></script>
+			<script src="bower_components/momentjs/min/locales.min.js"></script>
+			<script src="bower_components/humanize-duration/humanize-duration.js"></script>
              
             <!--script src="httpL://192.168.1.10:8000/node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script-->
             <script src="bower_components/hammerjs/hammer.js"></script>
@@ -116,7 +122,7 @@
 													<span>ETA</span>
 												</td>
 
-												<td ng-model="etaValue"></td>
+												<td ng-model="etaValue">{{busInfoObj.ETA}}</td>
 											</tr>
 										</tbody>
 									</table>

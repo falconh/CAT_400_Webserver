@@ -1,5 +1,5 @@
 'use strict';
-angular.module('myApp',['ngMaterial','firebase','ngMap','ngRoute','angularMoment'])
+angular.module('myApp',['ngMaterial','firebase','ngMap','ngRoute','angularMoment','timer'])
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('blue')
