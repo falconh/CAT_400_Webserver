@@ -28,7 +28,7 @@ angular.module('myApp',['ngMaterial','firebase','ngMap','ngRoute','angularMoment
 		$scope.submitValue = function(){
 
 			console.log($scope.busPrimaryKey);
-			$scope.busInfoObj = $firebaseObject(falconhRef.child("vehicleLocation").child($scope.busPrimaryKey));
+			$scope.busInfoObj = $firebaseObject(falconhRef.child("vehicleLocation").child($scope.busPrimaryKey).child($scope.journeyID));
 			//$scope.map.center= [{lat:parseFloat($scope.busInfoObj.Latitude),lng:parseFloat($scope.busInfoObj.Longitude)}];
 	//		$scope.markers.push({
 	//			latitude: parseFloat($scope.busInfoObj.Latitude),
